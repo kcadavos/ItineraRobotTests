@@ -1,0 +1,19 @@
+[INFO]    Initialized logging in results/pabot_results
+[INFO]    Robot Framework remote server at 127.0.0.1:8270 started.
+[DEBUG]   2026-03-29 13:21:56.257897 [PID:99704] [1] [ID:1] EXECUTING Tests.UI.ItineraLogin
+[DEBUG]   2026-03-29 13:21:56.258680 [PID:99705] [0] [ID:0] EXECUTING Tests.API.API ItineraLogin
+[INFO]    2026-03-29 13:21:57.611329 [PID:99705] [0] [ID:0] PASSED Tests.API.API ItineraLogin in 1.4 seconds
+[DEBUG]   2026-03-29 13:22:01.451148 [PID:99704] [1] [ID:1] still running Tests.UI.ItineraLogin after 5.0s
+[INFO]    2026-03-29 13:22:01.872576 [PID:99704] [1] [ID:1] PASSED Tests.UI.ItineraLogin in 5.6 seconds
+[INFO]    4 tests, 4 passed, 0 failed, 0 skipped.
+[INFO]    ===================================================
+[INFO]    Output:  /Users/karen/ItineraRobotTests/results/output.xml
+[INFO]    Log:     /Users/karen/ItineraRobotTests/results/log.html
+[INFO]    Report:  /Users/karen/ItineraRobotTests/results/report.html
+[DEBUG]   Finalizing Pabot execution...
+[DEBUG]   Stopping PabotLib process
+[INFO]    Robot Framework remote server at 127.0.0.1:8270 stopped.
+[DEBUG]   PabotLib process stopped
+[INFO]    Total testing: 7.0 seconds
+[INFO]    Elapsed time:  6.5 seconds
+[DEBUG]   Logs flushed successfully.

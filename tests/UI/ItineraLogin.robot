@@ -1,6 +1,5 @@
 *** Settings ***
 Documentation    This is the UI test suite for Itinera Login functionality.
-Library    SeleniumLibrary
 Resource    ../../variables/common_vars.robot
 Resource    ../../pages/Login/Loginpage.robot
 Test Setup      Open Browser    about:blank    ${browser}    options=add_argument("--window-size=1920,1080")

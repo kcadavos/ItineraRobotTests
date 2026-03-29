@@ -14,7 +14,7 @@ Get Token
     &{req_body}=     Create Dictionary    email=${USERNAME}    password=${PASSWORD}
     ${response}=    POST    ${API_URL}${LoginEndpoint}    json=&{req_body}    expected_status=200
     # Log To Console   ${response.json()}
-    Should Not Be Empty    ${response.json()}
+    RETURN   ${response.json()}
     
 Compare API And UI Value
     [Arguments]    ${api_value}    ${ui_value}
