@@ -5,10 +5,6 @@ Library     XML
 Resource    ../../resources/UIKeywords.robot
 
 *** Variables ***
-${url}    https://www.theitinera.app/LoginPage
-${time}     10 seconds
-${browser}    headlesschrome
-# ${browser}    chrome
 ${user}     validUser
 ${pass}    validPassword
 ${img_locator}     img[alt="Menu"]
@@ -30,12 +26,6 @@ ${loginbtn_locator}      xpath=//div[@id="login-desktop"]//button[@id="login-btn
 #     Log To Console   USERBEINGTESTED:${user}[username]
 #     LoginItinera    ${user}
 
-LoginItinera
-    [Arguments]     ${user}
-    UIKeywords.Open the url    ${url}
-    LoginOnly    ${user}[username]    ${user}[password]
-    Verify Login Successful     ${user} 
-    
 
 LoginOnly
     [Arguments]     ${username}    ${password}
@@ -55,5 +45,6 @@ Verify Login Successful
         Should Be Equal    ${userInUI}   ${user}[name]
 
 
-Verify Login Not Successful
-         Page Should Not Contain    Hi Test User
+Verify Login Not Successful 
+    [Arguments]    ${user}
+        Page Should Not Contain    Hi ${user}[name]
