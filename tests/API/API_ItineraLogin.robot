@@ -15,6 +15,12 @@ Verify User Name
     ${namefromAPI}=    Get User Name      ${USERNAME}  
     Log To Console    ${namefromAPI} 
     Compare API And UI Value    ${namefromAPI}    Karen Anne
+
+
+Get User Name
+    [Arguments]     ${USERNAME}
+    ${namefromAPI}=    Get User Name      ${USERNAME}  
+    return Username    ${namefromAPI}
   
 
 

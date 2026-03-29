@@ -1,21 +1,22 @@
 ==============================================================================
 Tests
 ==============================================================================
-Tests.UI
+Tests.API
 ==============================================================================
-Tests.UI.ItineraLogin :: This is the UI test suite for Itinera Login functi...
+Tests.API.API ItineraLogin :: This is the API test suite for Itinera Login ...
 ==============================================================================
-Test Valid Users                                                      | PASS |
+Verify Token Received                                                 | PASS |
 ------------------------------------------------------------------------------
-Test Invalid Users                                                    | PASS |
+Verify User Name                                                      Karen Anne
+| PASS |
 ------------------------------------------------------------------------------
-Tests.UI.ItineraLogin :: This is the UI test suite for Itinera Log... | PASS |
+Tests.API.API ItineraLogin :: This is the API test suite for Itine... | PASS |
 2 tests, 2 passed, 0 failed
 ==============================================================================
-Tests.UI                                                              | PASS |
+Tests.API                                                             | PASS |
 2 tests, 2 passed, 0 failed
 ==============================================================================
 Tests                                                                 | PASS |
 2 tests, 2 passed, 0 failed
 ==============================================================================
-Output:  /Users/karen/ItineraRobotTests/results/pabot_results/1/output.xml
+Output:  /Users/karen/ItineraRobotTests/results/pabot/pabot_results/0/output.xml

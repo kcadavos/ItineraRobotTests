@@ -1,12 +1,12 @@
 --suite Tests.UI.ItineraLogin
---variable CALLER_ID:7c3fcbb878db45dcb1548eb61637c638
+--variable CALLER_ID:a5281d82c7694b31adefcca3df282861
 --variable PABOTLIBURI:127.0.0.1:8270
 --variable PABOTEXECUTIONPOOLID:1
 --variable PABOTISLASTEXECUTIONINPOOL:1
 --variable PABOTNUMBEROFPROCESSES:8
 --variable PABOTQUEUEINDEX:1
 --variable PABOTLASTLEVEL:
---outputdir results/pabot_results/1
+--outputdir results/pabot/pabot_results/1
 --output output.xml
 --log NONE
 --report NONE
