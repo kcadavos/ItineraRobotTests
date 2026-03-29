@@ -6,6 +6,7 @@ Resource   ../../resources/api/LoginAPI.robot
 ${USERNAME}    karencadavos@gmail.com
 ${PASSWORD}    123
 
+
 *** Test Cases ***
 Verify Token Received
     ${response}=    Get Token    ${USERNAME}    ${PASSWORD}
@@ -13,14 +14,7 @@ Verify Token Received
 
 Verify User Name 
     ${namefromAPI}=    Get User Name      ${USERNAME}  
-    Log To Console    ${namefromAPI} 
     Compare API And UI Value    ${namefromAPI}    Karen Anne
 
-
-Get User Name
-    [Arguments]     ${USERNAME}
-    ${namefromAPI}=    Get User Name      ${USERNAME}  
-    return Username    ${namefromAPI}
-  
 
 

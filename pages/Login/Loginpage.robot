@@ -11,7 +11,7 @@ ${img_locator}     img[alt="Menu"]
 ${UserToLogin}    User1
 &{User1}    username=kcadavos@gmail.com    password=123     name=Karen Two
 &{User2}    username=karencadavos@gmail.com    password=123     name=Karen Anne
-&{CustomerList}   User1=${User1}    User2=${User2}
+# &{CustomerList}   User1=${User1}    User2=${User2}
 
 
 #XPATH LOCATORS
@@ -51,9 +51,8 @@ Verify Login Not Successful
 
 Get User Name From UI
     [Arguments]    ${UserToLogin}
-         Wait Until Element Is Visible    ${UserToL}[name]    10s
-         Input Text     ${email_locator}      ${username}
-        Wait Until Element Is Visible    ${password_locator}     10s
-        Input Text     ${password_locator}   ${password}
-        Wait Until Element Is Enabled    ${loginbtn_locator}   10s
-        Click Button   ${loginbtn_locator} 
+        Log To Console    LoginPage Username: ${UserToLogin}[username]
+        LoginOnly    ${UserToLogin}[username]    ${UserToLogin}[password]
+        Wait Until Element Is Visible    id:greetingname-desktop   10s
+        ${userInUI}=  Get Text     id:greetingname-desktop
+        RETURN     ${userInUI}
