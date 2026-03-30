@@ -1,6 +1,7 @@
-datasources:ee795a04bed27dc350aff6b5d99f304e452da5e0
+datasources:46e80112a7cb4188e76e65d630879b073072c146
 commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
 suitesfrom:no-suites-from-option
-file:f5f619c3dd6031363f82891ee0b998cd3f2ac4d3
+file:b763571d9aee840262e1f8ad2183b11cf465e17d
 --suite Tests.API.API ItineraLogin
+--suite Tests.E2E.E2E Login
 --suite Tests.UI.ItineraLogin

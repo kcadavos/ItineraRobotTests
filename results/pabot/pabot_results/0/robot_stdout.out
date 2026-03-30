@@ -7,8 +7,7 @@ Tests.API.API ItineraLogin :: This is the API test suite for Itinera Login ...
 ==============================================================================
 Verify Token Received                                                 | PASS |
 ------------------------------------------------------------------------------
-Verify User Name                                                      Karen Anne
-| PASS |
+Verify User Name                                                      | PASS |
 ------------------------------------------------------------------------------
 Tests.API.API ItineraLogin :: This is the API test suite for Itine... | PASS |
 2 tests, 2 passed, 0 failed

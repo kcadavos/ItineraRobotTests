@@ -1,11 +1,11 @@
---suite Tests.UI.ItineraLogin
---variable CALLER_ID:a5281d82c7694b31adefcca3df282861
+--suite Tests.E2E.E2E Login
+--variable CALLER_ID:71b8f3227094469f9a35c01d3c257941
 --variable PABOTLIBURI:127.0.0.1:8270
---variable PABOTEXECUTIONPOOLID:1
+--variable PABOTEXECUTIONPOOLID:2
 --variable PABOTISLASTEXECUTIONINPOOL:1
 --variable PABOTNUMBEROFPROCESSES:8
 --variable PABOTQUEUEINDEX:1
---variable PABOTLASTLEVEL:
+--variable PABOTLASTLEVEL:Tests.E2E
 --outputdir results/pabot/pabot_results/1
 --output output.xml
 --log NONE
@@ -13,4 +13,4 @@
 --xunit NONE
 --consolecolors off
 --consolemarkers off
-tests
+tests/
