@@ -10,5 +10,5 @@ Test Setup    Open Browser     about: blank    ${browser}    options=add_argumen
 Test Teardown     Close Browser
 
 *** Test Cases ***
-Trips are Loaded in the dashboard
+Check Expected Trips are displayed in the dashboard
      dashboardkeywords.Check Listed Trips in dashboard    ${User2}
