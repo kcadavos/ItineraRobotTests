@@ -21,7 +21,7 @@ Get Trip Names from UI
 
 Verify Trip Names Listed Are Expected   
     Log To Console   \n Starting Verify Trip Name
-    @{ui_trip_names}    Get Trip Names from UI
+    @{ui_trip_names}    Get Trip Names from UI 
     FOR    ${el}   IN    @{ui_trip_names}
     ${trip_name}    Get Text    ${el}
     Should Be True    '${trip_name}' in @{expected_trip_names}    Trip ${trip_name} was not expected
