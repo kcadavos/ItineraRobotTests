@@ -1,13 +1,12 @@
 [INFO]    Initialized logging in results/pabot/pabot_results
 [INFO]    Robot Framework remote server at 127.0.0.1:8270 started.
-[DEBUG]   Storing .pabotsuitenames file
-[DEBUG]   2026-03-29 15:10:53.155630 [PID:24447] [0] [ID:2] EXECUTING Tests.UI.ItineraLogin
-[DEBUG]   2026-03-29 15:10:53.156038 [PID:24448] [1] [ID:0] EXECUTING Tests.API.API ItineraLogin
-[DEBUG]   2026-03-29 15:10:53.157416 [PID:24449] [2] [ID:1] EXECUTING Tests.E2E.E2E Login
-[INFO]    2026-03-29 15:10:54.959038 [PID:24448] [1] [ID:0] PASSED Tests.API.API ItineraLogin in 1.8 seconds
-[INFO]    2026-03-29 15:10:56.726224 [PID:24449] [2] [ID:1] PASSED Tests.E2E.E2E Login in 3.6 seconds
-[DEBUG]   2026-03-29 15:10:58.417263 [PID:24447] [0] [ID:2] still running Tests.UI.ItineraLogin after 5.0s
-[INFO]    2026-03-29 15:10:59.767764 [PID:24447] [0] [ID:2] PASSED Tests.UI.ItineraLogin in 6.6 seconds
+[DEBUG]   2026-03-30 18:24:48.958259 [PID:64875] [2] [ID:0] EXECUTING Tests.API.API ItineraLogin
+[DEBUG]   2026-03-30 18:24:48.960683 [PID:64876] [0] [ID:2] EXECUTING Tests.UI.ItineraLogin
+[DEBUG]   2026-03-30 18:24:48.962346 [PID:64877] [1] [ID:1] EXECUTING Tests.E2E.E2E Login
+[INFO]    2026-03-30 18:24:50.431023 [PID:64875] [2] [ID:0] PASSED Tests.API.API ItineraLogin in 1.5 seconds
+[INFO]    2026-03-30 18:24:52.803725 [PID:64877] [1] [ID:1] PASSED Tests.E2E.E2E Login in 3.8 seconds
+[DEBUG]   2026-03-30 18:24:54.146419 [PID:64876] [0] [ID:2] still running Tests.UI.ItineraLogin after 5.0s
+[INFO]    2026-03-30 18:24:57.878053 [PID:64876] [0] [ID:2] PASSED Tests.UI.ItineraLogin in 8.9 seconds
 [INFO]    5 tests, 5 passed, 0 failed, 0 skipped.
 [INFO]    ===================================================
 [INFO]    Output:  /Users/karen/ItineraRobotTests/results/pabot/output.xml
@@ -17,6 +16,6 @@
 [DEBUG]   Stopping PabotLib process
 [INFO]    Robot Framework remote server at 127.0.0.1:8270 stopped.
 [DEBUG]   PabotLib process stopped
-[INFO]    Total testing: 12.0 seconds
-[INFO]    Elapsed time:  7.5 seconds
+[INFO]    Total testing: 14.20 seconds
+[INFO]    Elapsed time:  9.43 seconds
 [DEBUG]   Logs flushed successfully.

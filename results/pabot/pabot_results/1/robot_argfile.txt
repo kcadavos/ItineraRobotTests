@@ -1,8 +1,8 @@
 --suite Tests.E2E.E2E Login
---variable CALLER_ID:71b8f3227094469f9a35c01d3c257941
+--variable CALLER_ID:f6eeb48f1dec49728219b74afa540220
 --variable PABOTLIBURI:127.0.0.1:8270
---variable PABOTEXECUTIONPOOLID:2
---variable PABOTISLASTEXECUTIONINPOOL:1
+--variable PABOTEXECUTIONPOOLID:1
+--variable PABOTISLASTEXECUTIONINPOOL:0
 --variable PABOTNUMBEROFPROCESSES:8
 --variable PABOTQUEUEINDEX:1
 --variable PABOTLASTLEVEL:Tests.E2E
@@ -13,4 +13,4 @@
 --xunit NONE
 --consolecolors off
 --consolemarkers off
-tests/
+tests

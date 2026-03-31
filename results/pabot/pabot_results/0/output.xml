@@ -1,110 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.14.3 on darwin)" generated="2026-03-29T15:10:53.392156" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.14.3 on darwin)" generated="2026-03-30T18:24:49.149421" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/Users/karen/ItineraRobotTests/tests">
 <suite id="s1-s1" name="API" source="/Users/karen/ItineraRobotTests/tests/API">
 <suite id="s1-s1-s1" name="API ItineraLogin" source="/Users/karen/ItineraRobotTests/tests/API/API_ItineraLogin.robot">
 <test id="s1-s1-s1-t1" name="Verify Token Received" line="11">
 <kw name="Get Token" owner="LoginAPI">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2026-03-29T15:10:53.474744" level="INFO">&amp;{req_body} = { email=karencadavos@gmail.com | password=123 }</msg>
+<msg time="2026-03-30T18:24:49.224734" level="INFO">&amp;{req_body} = { email=karencadavos@gmail.com | password=123 }</msg>
 <var>&amp;{req_body}</var>
 <arg>email=${USERNAME}</arg>
 <arg>password=${PASSWORD}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2026-03-29T15:10:53.474493" elapsed="0.000273"/>
+<status status="PASS" start="2026-03-30T18:24:49.224347" elapsed="0.000420"/>
 </kw>
 <kw name="POST" owner="RequestsLibrary">
-<msg time="2026-03-29T15:10:54.364340" level="INFO">POST Request : url=https://itineraioapi-ebdthgaebndcddam.westus2-01.azurewebsites.net/User/Login 
+<msg time="2026-03-30T18:24:49.905882" level="INFO">POST Request : url=https://itineraioapi-ebdthgaebndcddam.westus2-01.azurewebsites.net/User/Login 
  path_url=/User/Login 
  headers={'User-Agent': 'python-requests/2.33.0', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '54', 'Content-Type': 'application/json'} 
  body=b'{"email": "karencadavos@gmail.com", "password": "123"}' 
  </msg>
-<msg time="2026-03-29T15:10:54.364439" level="INFO">POST Response : url=https://itineraioapi-ebdthgaebndcddam.westus2-01.azurewebsites.net/User/Login 
+<msg time="2026-03-30T18:24:49.906079" level="INFO">POST Response : url=https://itineraioapi-ebdthgaebndcddam.westus2-01.azurewebsites.net/User/Login 
  status=200, reason=OK 
- headers={'Content-Type': 'application/json; charset=utf-8', 'Date': 'Sun, 29 Mar 2026 22:10:53 GMT', 'Server': 'Microsoft-IIS/10.0', 'Content-Encoding': 'gzip', 'Set-Cookie': 'ARRAffinity=22a7daa836b64a8ce56c907737553d08297ff2e76cd06a1f52c29956b9a85c17;Path=/;HttpOnly;Secure;Domain=itineraioapi-ebdthgaebndcddam.westus2-01.azurewebsites.net, ARRAffinitySameSite=22a7daa836b64a8ce56c907737553d08297ff2e76cd06a1f52c29956b9a85c17;Path=/;HttpOnly;SameSite=None;Secure;Domain=itineraioapi-ebdthgaebndcddam.westus2-01.azurewebsites.net', 'Transfer-Encoding': 'chunked', 'Vary': 'Accept-Encoding', 'X-Powered-By': 'ASP.NET'} 
- body={"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzQ4MjU4NTQsImlzcyI6Imh0dHBzOi8vaXRpbmVyYWlvYXBpLWNxYXBnc2djYnNjaGM3aHUud2VzdHVzLTAxLmF6dXJld2Vic2l0ZXMubmV0LyIsImF1ZCI6Imh0dHBzOi8vaXRpbmVyYWlvYXBpLWNxYXBnc2djYnNjaGM3aHUud2VzdHVzLTAxLmF6dXJld2Vic2l0ZXMubmV0LyJ9.bnSM7gzOGfulgG3sgSOORBeeiyEQ63iC8o1K6AughVY"} 
+ headers={'Content-Type': 'application/json; charset=utf-8', 'Date': 'Tue, 31 Mar 2026 01:24:49 GMT', 'Server': 'Microsoft-IIS/10.0', 'Content-Encoding': 'gzip', 'Set-Cookie': 'ARRAffinity=22a7daa836b64a8ce56c907737553d08297ff2e76cd06a1f52c29956b9a85c17;Path=/;HttpOnly;Secure;Domain=itineraioapi-ebdthgaebndcddam.westus2-01.azurewebsites.net, ARRAffinitySameSite=22a7daa836b64a8ce56c907737553d08297ff2e76cd06a1f52c29956b9a85c17;Path=/;HttpOnly;SameSite=None;Secure;Domain=itineraioapi-ebdthgaebndcddam.westus2-01.azurewebsites.net', 'Transfer-Encoding': 'chunked', 'Vary': 'Accept-Encoding', 'X-Powered-By': 'ASP.NET'} 
+ body={"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzQ5MjM4ODksImlzcyI6Imh0dHBzOi8vaXRpbmVyYWlvYXBpLWNxYXBnc2djYnNjaGM3aHUud2VzdHVzLTAxLmF6dXJld2Vic2l0ZXMubmV0LyIsImF1ZCI6Imh0dHBzOi8vaXRpbmVyYWlvYXBpLWNxYXBnc2djYnNjaGM3aHUud2VzdHVzLTAxLmF6dXJld2Vic2l0ZXMubmV0LyJ9.FXCK7hL4wW6xghwqU6-H9lw1pYrSiWcClzbXESA5-0I"} 
  </msg>
-<msg time="2026-03-29T15:10:54.364714" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-03-30T18:24:49.906289" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
-<arg>${API_URL}${LoginEndpoint}</arg>
+<arg>${API_BASE_URL}${LoginEndpoint}</arg>
 <arg>json=&amp;{req_body}</arg>
 <arg>expected_status=200</arg>
 <doc>Sends a POST request.</doc>
-<status status="PASS" start="2026-03-29T15:10:53.474828" elapsed="0.889906"/>
+<status status="PASS" start="2026-03-30T18:24:49.224862" elapsed="0.681498"/>
 </kw>
 <return>
 <value>${response.json()}</value>
-<status status="PASS" start="2026-03-29T15:10:54.364795" elapsed="0.000044"/>
+<status status="PASS" start="2026-03-30T18:24:49.906557" elapsed="0.000074"/>
 </return>
-<msg time="2026-03-29T15:10:54.365344" level="INFO">${response} = {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzQ4MjU4NTQsImlzcyI6Imh0dHBzOi8vaXRpbmVyYWlvYXBpLWNxYXBnc2djYnNjaGM3aHUud2VzdHVzLTAxLmF6dXJld2Vic2l0ZXMubmV0LyIsImF1ZCI6Imh0dHBzOi8vaXRpbmVy...</msg>
+<msg time="2026-03-30T18:24:49.907408" level="INFO">${response} = {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzQ5MjM4ODksImlzcyI6Imh0dHBzOi8vaXRpbmVyYWlvYXBpLWNxYXBnc2djYnNjaGM3aHUud2VzdHVzLTAxLmF6dXJld2Vic2l0ZXMubmV0LyIsImF1ZCI6Imh0dHBzOi8vaXRpbmVy...</msg>
 <var>${response}</var>
 <arg>${USERNAME}</arg>
 <arg>${PASSWORD}</arg>
-<status status="PASS" start="2026-03-29T15:10:53.474187" elapsed="0.891176"/>
+<status status="PASS" start="2026-03-30T18:24:49.223879" elapsed="0.683581"/>
 </kw>
 <kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-03-29T15:10:54.365843" level="INFO">Length is 305.</msg>
+<msg time="2026-03-30T18:24:49.908451" level="INFO">Length is 305.</msg>
 <arg>${response}[token]</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2026-03-29T15:10:54.365478" elapsed="0.000393"/>
+<status status="PASS" start="2026-03-30T18:24:49.907794" elapsed="0.000706"/>
 </kw>
-<status status="PASS" start="2026-03-29T15:10:53.473847" elapsed="0.892092"/>
+<status status="PASS" start="2026-03-30T18:24:49.223393" elapsed="0.685217"/>
 </test>
 <test id="s1-s1-s1-t2" name="Verify User Name" line="15">
 <kw name="Get User Name" owner="LoginAPI">
 <kw name="GET" owner="RequestsLibrary">
-<msg time="2026-03-29T15:10:54.641852" level="INFO">GET Request : url=https://itineraioapi-ebdthgaebndcddam.westus2-01.azurewebsites.net/User/GetUserInfoByEmail/karencadavos@gmail.com 
+<msg time="2026-03-30T18:24:50.185935" level="INFO">GET Request : url=https://itineraioapi-ebdthgaebndcddam.westus2-01.azurewebsites.net/User/GetUserInfoByEmail/karencadavos@gmail.com 
  path_url=/User/GetUserInfoByEmail/karencadavos@gmail.com 
  headers={'User-Agent': 'python-requests/2.33.0', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg time="2026-03-29T15:10:54.641913" level="INFO">GET Response : url=https://itineraioapi-ebdthgaebndcddam.westus2-01.azurewebsites.net/User/GetUserInfoByEmail/karencadavos@gmail.com 
+<msg time="2026-03-30T18:24:50.186009" level="INFO">GET Response : url=https://itineraioapi-ebdthgaebndcddam.westus2-01.azurewebsites.net/User/GetUserInfoByEmail/karencadavos@gmail.com 
  status=200, reason=OK 
- headers={'Content-Type': 'application/json; charset=utf-8', 'Date': 'Sun, 29 Mar 2026 22:10:54 GMT', 'Server': 'Microsoft-IIS/10.0', 'Content-Encoding': 'gzip', 'Set-Cookie': 'ARRAffinity=22a7daa836b64a8ce56c907737553d08297ff2e76cd06a1f52c29956b9a85c17;Path=/;HttpOnly;Secure;Domain=itineraioapi-ebdthgaebndcddam.westus2-01.azurewebsites.net, ARRAffinitySameSite=22a7daa836b64a8ce56c907737553d08297ff2e76cd06a1f52c29956b9a85c17;Path=/;HttpOnly;SameSite=None;Secure;Domain=itineraioapi-ebdthgaebndcddam.westus2-01.azurewebsites.net', 'Transfer-Encoding': 'chunked', 'Vary': 'Accept-Encoding', 'X-Powered-By': 'ASP.NET'} 
+ headers={'Content-Type': 'application/json; charset=utf-8', 'Date': 'Tue, 31 Mar 2026 01:24:49 GMT', 'Server': 'Microsoft-IIS/10.0', 'Content-Encoding': 'gzip', 'Set-Cookie': 'ARRAffinity=22a7daa836b64a8ce56c907737553d08297ff2e76cd06a1f52c29956b9a85c17;Path=/;HttpOnly;Secure;Domain=itineraioapi-ebdthgaebndcddam.westus2-01.azurewebsites.net, ARRAffinitySameSite=22a7daa836b64a8ce56c907737553d08297ff2e76cd06a1f52c29956b9a85c17;Path=/;HttpOnly;SameSite=None;Secure;Domain=itineraioapi-ebdthgaebndcddam.westus2-01.azurewebsites.net', 'Transfer-Encoding': 'chunked', 'Vary': 'Accept-Encoding', 'X-Powered-By': 'ASP.NET'} 
  body={"id":1,"email":"karencadavos@gmail.com","name":"Karen Anne"} 
  </msg>
-<msg time="2026-03-29T15:10:54.641996" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-03-30T18:24:50.186115" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
-<arg>${API_URL}User/GetUserInfoByEmail/${USERNAME}</arg>
+<arg>${API_BASE_URL}User/GetUserInfoByEmail/${USERNAME}</arg>
 <arg>expected_status=200</arg>
 <doc>Sends a GET request.</doc>
-<status status="PASS" start="2026-03-29T15:10:54.366396" elapsed="0.275614"/>
+<status status="PASS" start="2026-03-30T18:24:49.909409" elapsed="0.276725"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-03-29T15:10:54.642540" level="INFO">${data} = {'id': 1, 'email': 'karencadavos@gmail.com', 'name': 'Karen Anne'}</msg>
+<msg time="2026-03-30T18:24:50.186811" level="INFO">${data} = {'id': 1, 'email': 'karencadavos@gmail.com', 'name': 'Karen Anne'}</msg>
 <var>${data}</var>
 <arg>${response.json()}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-03-29T15:10:54.642102" elapsed="0.000453"/>
+<status status="PASS" start="2026-03-30T18:24:50.186245" elapsed="0.000586"/>
 </kw>
 <return>
 <value>${data}[name]</value>
-<status status="PASS" start="2026-03-29T15:10:54.642586" elapsed="0.000029"/>
+<status status="PASS" start="2026-03-30T18:24:50.186871" elapsed="0.000037"/>
 </return>
-<msg time="2026-03-29T15:10:54.642693" level="INFO">${namefromAPI} = Karen Anne</msg>
+<msg time="2026-03-30T18:24:50.187011" level="INFO">${namefromAPI} = Karen Anne</msg>
 <var>${namefromAPI}</var>
 <arg>${USERNAME}</arg>
-<status status="PASS" start="2026-03-29T15:10:54.366259" elapsed="0.276446"/>
+<status status="PASS" start="2026-03-30T18:24:49.909144" elapsed="0.277882"/>
 </kw>
 <kw name="Compare API And UI Value" owner="LoginAPI">
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${api_value}</arg>
 <arg>${ui_value}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2026-03-29T15:10:54.642919" elapsed="0.000161"/>
+<status status="PASS" start="2026-03-30T18:24:50.187308" elapsed="0.000204"/>
 </kw>
 <arg>${namefromAPI}</arg>
 <arg>Karen Anne</arg>
-<status status="PASS" start="2026-03-29T15:10:54.642784" elapsed="0.000325"/>
+<status status="PASS" start="2026-03-30T18:24:50.187128" elapsed="0.000422"/>
 </kw>
-<status status="PASS" start="2026-03-29T15:10:54.366049" elapsed="0.277113"/>
+<status status="PASS" start="2026-03-30T18:24:49.908777" elapsed="0.278845"/>
 </test>
 <doc>This is the API test suite for Itinera Login functionality.</doc>
-<status status="PASS" start="2026-03-29T15:10:53.413789" elapsed="1.229587"/>
+<status status="PASS" start="2026-03-30T18:24:49.171751" elapsed="1.016137"/>
 </suite>
-<status status="PASS" start="2026-03-29T15:10:53.412561" elapsed="1.231064"/>
+<status status="PASS" start="2026-03-30T18:24:49.171113" elapsed="1.017127"/>
 </suite>
-<status status="PASS" start="2026-03-29T15:10:53.393377" elapsed="1.250412"/>
+<status status="PASS" start="2026-03-30T18:24:49.150424" elapsed="1.038054"/>
 </suite>
 <statistics>
 <total>

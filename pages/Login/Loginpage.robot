@@ -2,7 +2,7 @@
 Documentation    This is the  page resource file for Itinera Login functionality.
 Library    SeleniumLibrary
 Library     XML
-Resource    ../../resources/UIKeywords.robot
+# Resource    ../../resources/UICommon.robot
 
 *** Variables ***
 ${user}     validUser

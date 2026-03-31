@@ -1,5 +1,5 @@
 --suite Tests.UI.ItineraLogin
---variable CALLER_ID:fe4214d58b7f4288aa3da03df825b169
+--variable CALLER_ID:216956fede294d35a13a5c2233e6e62f
 --variable PABOTLIBURI:127.0.0.1:8270
 --variable PABOTEXECUTIONPOOLID:0
 --variable PABOTISLASTEXECUTIONINPOOL:0
@@ -13,4 +13,4 @@
 --xunit NONE
 --consolecolors off
 --consolemarkers off
-tests/
+tests

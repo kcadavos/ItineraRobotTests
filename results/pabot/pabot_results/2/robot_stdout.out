@@ -5,9 +5,9 @@ Tests.UI
 ==============================================================================
 Tests.UI.ItineraLogin :: This is the UI test suite for Itinera Login functi...
 ==============================================================================
-Test Valid Users                                                      | PASS |
+Valid Users Can Login                                                 | PASS |
 ------------------------------------------------------------------------------
-Test Invalid Users                                                    | PASS |
+Invalid Users Cannot Login                                            | PASS |
 ------------------------------------------------------------------------------
 Tests.UI.ItineraLogin :: This is the UI test suite for Itinera Log... | PASS |
 2 tests, 2 passed, 0 failed

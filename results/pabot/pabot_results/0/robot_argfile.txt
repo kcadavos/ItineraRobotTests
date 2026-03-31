@@ -1,8 +1,8 @@
 --suite Tests.API.API ItineraLogin
---variable CALLER_ID:a140e9f61b574209afb4cb0e099d164e
+--variable CALLER_ID:5590b0a14d264e37b0bd79f355a464c1
 --variable PABOTLIBURI:127.0.0.1:8270
---variable PABOTEXECUTIONPOOLID:1
---variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTEXECUTIONPOOLID:2
+--variable PABOTISLASTEXECUTIONINPOOL:1
 --variable PABOTNUMBEROFPROCESSES:8
 --variable PABOTQUEUEINDEX:0
 --variable PABOTLASTLEVEL:Tests.API
@@ -13,4 +13,4 @@
 --xunit NONE
 --consolecolors off
 --consolemarkers off
-tests/
+tests
