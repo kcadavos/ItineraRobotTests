@@ -19,12 +19,12 @@ Get Trip Names from UI
 
 
     Wait Until Element Is Visible    ${tripheader_locator}    10s
-    @{elements2}=        Get WebElements    ${tripheader_locator}
+    @{elements2}       Get WebElements    ${tripheader_locator}
     Log To Console     TRIP NAMES: @{elements2}
     Log To Console    EXPECTED: @{expected_trip_names}
     
     FOR    ${el}   IN    @{elements2}
-    ${trip_name}=    Get Text    ${el}
+    ${trip_name}    Get Text    ${el}
     Should Be True    '${trip_name}' in @{expected_trip_names}    Trip ${trip_name} was not expected
     Log To Console    Trip: ${trip_name}
     # Should Contain    @{expected_trip_names}     ${trip_name}
